@@ -1,4 +1,4 @@
-package com.jtaylor.util;
+package com.jtaylor.util.enums;
 
 /**
  * Created by IntelliJ IDEA.

@@ -34,7 +34,12 @@ public class Logging
 	{
 		return createLogger(clazz,SystemOperations.SYSTEM_LOG_FOLDER,true,false);
 	}
-
+	public static void initWarningRootLogger()
+	{
+		Logger log=Logger.getRootLogger();
+		log.addAppender(new ConsoleAppender(new PatternLayout(BASIC_PATTERN)));
+		log.setLevel(Level.WARN);
+	}
 	public static final String CONSOLE_APPENDER_NAME="-console";
 	public static final String FILE_APPENDER_NAME="-file";
 	public static final String LF5_APPENDER_NAME="-lf5";

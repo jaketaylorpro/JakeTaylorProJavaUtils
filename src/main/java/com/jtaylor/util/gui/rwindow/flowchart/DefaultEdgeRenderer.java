@@ -1,7 +1,7 @@
 package com.jtaylor.util.gui.rwindow.flowchart;
 
 import com.jtaylor.util.ColorOperations;
-import com.jtaylor.util.Direction;
+import com.jtaylor.util.enums.Direction;
 import com.jtaylor.util.Logging;
 import com.jtaylor.util.gui.GraphicsOperations;
 import com.jtaylor.util.gui.Line;

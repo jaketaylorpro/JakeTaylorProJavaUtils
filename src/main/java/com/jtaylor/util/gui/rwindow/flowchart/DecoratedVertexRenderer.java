@@ -1,7 +1,7 @@
 package com.jtaylor.util.gui.rwindow.flowchart;
 
 import com.jtaylor.util.ColorOperations;
-import com.jtaylor.util.Direction;
+import com.jtaylor.util.enums.Direction;
 import com.jtaylor.util.datastructures.Pair;
 import com.jtaylor.util.gui.GraphicsOperations;
 
@@ -156,7 +156,7 @@ public class DecoratedVertexRenderer<V> implements VertexRenderer<V>
       {
          string="3";
       }
-      else if(place==Direction.NORTH_WEST)
+      else if(place== Direction.NORTH_WEST)
       {
          string="4";
       }

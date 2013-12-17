@@ -1,6 +1,6 @@
 package com.jtaylor.util.gui.rwindow.flowchart;
 
-import com.jtaylor.util.Direction;
+import com.jtaylor.util.enums.Direction;
 import com.jtaylor.util.Logging;
 import com.jtaylor.util.gui.rwindow.ActionHelper;
 import com.jtaylor.util.gui.rwindow.RBar;
@@ -361,7 +361,7 @@ public class FlowGraphView <V,E,L>  extends JPanel implements MouseListener,Chan
       {
          return new Point(westX,northY+(int)(.5*myCellSize.getHeight()));
       }
-      else if(direction==Direction.NORTH_WEST)
+      else if(direction== Direction.NORTH_WEST)
       {
          return new Point(westX,northY);
       }

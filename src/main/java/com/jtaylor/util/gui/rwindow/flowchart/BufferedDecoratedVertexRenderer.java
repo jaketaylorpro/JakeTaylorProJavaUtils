@@ -1,6 +1,6 @@
 package com.jtaylor.util.gui.rwindow.flowchart;
 
-import com.jtaylor.util.Direction;
+import com.jtaylor.util.enums.Direction;
 import com.jtaylor.util.datastructures.Pair;
 
 import java.awt.*;

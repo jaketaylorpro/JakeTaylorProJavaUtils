@@ -1,6 +1,6 @@
 package com.jtaylor.util.gui;
 
-import com.jtaylor.util.Direction;
+import com.jtaylor.util.enums.Direction;
 import com.jtaylor.util.gui.rwindow.RDialog;
 
 import javax.swing.*;
@@ -196,7 +196,7 @@ public class Triangle2D extends RectangularShape
 
    public static void main(String[] args)
    {
-      final Triangle2D t=new Triangle2D(50,50,20,20,Direction.EAST);
+      final Triangle2D t=new Triangle2D(50,50,20,20, Direction.EAST);
       JPanel panel=new JPanel()
       {
          @Override
