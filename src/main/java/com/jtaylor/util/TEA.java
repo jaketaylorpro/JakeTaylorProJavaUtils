@@ -1,5 +1,7 @@
 package com.jtaylor.util;
 
+import com.jtaylor.util.ws.EncryptionService;
+
 /**
  * Implementation of the Tiny Encryption Algorithm (TEA).
  * The Tiny Encryption Algorithm is one of the fastest and most efficient
@@ -27,7 +29,7 @@ package com.jtaylor.util;
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class TEA
+public class TEA implements EncryptionService
 {
    private final static int SUGAR = 0x9E3779B9;
    private final static int CUPS  = 32;

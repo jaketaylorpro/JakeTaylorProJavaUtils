@@ -47,6 +47,6 @@ public abstract class JsonHttpServlet <I,O> extends QuickHttpServlet
 		resp.setStatus(HttpServletResponse.SC_OK);
 		log.debug("done");
 	}
-	public abstract O doHttpOperation(I i,HttpOperation op) throws ServletException;
+	public abstract O doHttpOperation(I i,HttpOperation op) throws ServletException;//TODO throw different exceptions to cause different responses, securiuty exception redirects (with url parameter)
 	public abstract Class<I> getInType();
 }
