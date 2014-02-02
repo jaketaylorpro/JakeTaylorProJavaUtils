@@ -24,7 +24,8 @@ public abstract class TokenSecureJsonServlet<I extends TokenSecureAjaxObject,O> 
 	{
 		try
 		{
-			String secretKey=secretKeyProvider.getSecretKey(i.$security_ident);
+			SecretKeyProvider.SecretKeyStruct secretSecretKeyStruct =secretKeyProvider.getSecretKey(i.$security_ident);
+			String secretKey= secretSecretKeyStruct.secret_key;
 			if(secretKey==null)
 			{
 				throw new SecurityException("No such user: '"+i.$security_ident+"'");

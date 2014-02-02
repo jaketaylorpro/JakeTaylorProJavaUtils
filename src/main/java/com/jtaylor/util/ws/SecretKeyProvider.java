@@ -9,7 +9,17 @@ package com.jtaylor.util.ws;
  */
 public interface SecretKeyProvider
 {
-	public String getSecretKey(String identity);
+	public SecretKeyStruct getSecretKey(String identity);
 
-	public void putSecretKey(String identity,String token);
+	//public void putSecretKey(String identity,String token);
+	public static class SecretKeyStruct
+	{
+		public String secret_key;
+		public String secret_salt;
+		public SecretKeyStruct(String key,String salt)
+		{
+			secret_key=key;
+			secret_salt=salt;
+		}
+	}
 }
